@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+
+@layer base {
+    .row{
+        @apply flex flex-wrap w-full
+    }
+}
+
+@layer components{
+
+}
+
+@layer utilities{
+    
+    .bt {
+        @apply border border-2 border-amber-950 
+    }
+    .bgImghead{
+        @apply bg-[url(../img/banner-12.jpg)] bg-no-repeat bg-cover bg-auto bg-center 
+    }
+    .bgImgBody1{
+        @apply bg-[url(../img/banner-02.jpg)] bg-no-repeat bg-cover bg-auto bg-top
+    }
+    .bgfooter{
+         @apply bg-[url(../img/17.jpg)] bg-no-repeat bg-cover bg-auto bg-top
+
+    }
+}
+
+
+  .bgtransparent{
+        background-color: rgba(0, 0, 0, 0.521);
+    }
+    
+   .bgtransparentgreen{
+    background-color: rgba(49, 194, 109, 0.582);
+
+   }    
+
+   .borderanime{
+    border-bottom: 2px solid  rgba(49, 194, 109, 0);
+    animation-name: anime;
+    animation-duration: 4s;
+        &:hover{
+            border-bottom: 2px solid  rgba(49, 194, 109, 0.767);
+
+        }
+   }
+
+@keyframes anime{
+    from{top: 0%; }
+    to{top: 100%;}
+}
